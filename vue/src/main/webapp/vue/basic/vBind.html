@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue的v-bind使用</title>
+    <style>
+        .aStyle{
+            border: 3px red solid;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <input type="button" value="改变样式" @click="addCss">
+        <input type="button" value="改变图片" @click="changeSrc">
+        <br>
+        <!--   {aStyle:showCss} 等价于 showCss?'aStyle':''   -->
+        <img width="300" v-bind:title="msg" :class="{aStyle:showCss}" :src="src" alt="">
+    </div>
+
+    <!--引入vue.js-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el:"#app",
+            data:{
+                src:"https://avatars.githubusercontent.com/u/57065210?v=4",
+                msg:"个人头像",
+                showCss:true
+            },
+            methods:{
+                addCss(){
+                    this.showCss = !this.showCss;
+                },
+                changeSrc(){
+                    this.src = "https://cn.vuejs.org/images/logo.svg"
+                }
+            }
+        });
+    </script>
+</body>
+</html>

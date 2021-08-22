@@ -32,6 +32,9 @@
 >   + v-text（vText）： *v-text的使用*
 >   + v-html（vHtml）： *v-html的使用*
 >   + 事件的定义及绑定（event）： *事件的定义及绑定相关细节*
+>   + v-show（vShow）： *v-show的使用（display）*
+>   + v-if（vIf）： *v-If的使用（DOM）*
+>   + v-bind（vBind）： *v-bind的使用*
 >
 >   </details>
 
