@@ -2,18 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Vue的v-show使用</title>
-
+    <title>Vue的v-if使用</title>
 </head>
 <body>
-    <!--  v-show 用来控制标签展示还是隐藏 （底层控制的是标签display属性） -->
+    <!--  v-if 用来控制标签展示还是隐藏 （底层控制是DOM元素，操作DOM） -->
     <div id="app">
         <input type="button" value="展示隐藏标签" @click="showMsg">
-        <span v-show="show">HelloWorld</span>
+        <span v-if="show">HelloWorld</span>
         <br>
         <input type="button" value="增加" @click="addAge">
         <span v-text="age"></span>
-        <span v-show="age>1" style="color: red">年龄大于0</span>
+        <span v-if="age>1" style="color: red">年龄大于0</span>
     </div>
 
     <!--引入vue.js-->
@@ -35,6 +34,5 @@
             }
         });
     </script>
-
 </body>
 </html>
