@@ -21,7 +21,7 @@
 <details>
 <summary style="font-size: large"><b>一、Vue开发（vue）</b></summary>
     
-    路径为 vue/src/main/webapp/vue
+`路径为 vue/src/main/webapp/vue`
 
 ****
 
