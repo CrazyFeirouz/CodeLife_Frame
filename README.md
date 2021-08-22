@@ -31,6 +31,7 @@
 >   + 插值表达式（begin）： *使用插值表达式显示各类数据*
 >   + v-text（vText）： *v-text的使用*
 >   + v-html（vHtml）： *v-html的使用*
+>   + 事件的定义及绑定（event）： *事件的定义及绑定相关细节*
 >
 >   </details>
 

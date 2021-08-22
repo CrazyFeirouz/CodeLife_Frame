@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue中事件的定义及绑定</title>
+</head>
+<body>
+    <div id="app">
+        <input type="button" value="点击减少" v-on:click="subAge">
+        <h1 v-text="age">{{ age }}</h1>
+        <input type="button" value="点击增加" @click="addAge">  <!--2.x支持的简化写法，省略v-on:-->
+        <br><br>
+        <input type="button" value="重置" @click="resetAge(0)">
+    </div>
+
+    <!--引入vue.js-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el:"#app",
+            data:{
+                age:10
+            },
+            methods:{
+                addAge:function (){   // 普通的事件定义写法
+                    this.age++; // Vue定义的事件中，this指的就是当前的Vue实例
+                },
+                subAge(){ // 简洁的事件定义写法
+                    if (this.age > 0){
+                        this.age--;
+                    }
+                },
+                resetAge(num){
+                    this.age = num;
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
