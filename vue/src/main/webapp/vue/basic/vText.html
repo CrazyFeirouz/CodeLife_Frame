@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-text的使用</title>
+</head>
+<body>
+    <div id="app">
+        <span>{{ msg }}</span>
+        <br>
+        <span v-text="msg">内部内容会被完全替换</span>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el:"#app",
+            data:{
+                msg:"Hello World"
+            }
+        });
+    </script>
+</body>
+</html>
