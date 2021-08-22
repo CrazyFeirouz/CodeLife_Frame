@@ -29,6 +29,8 @@
 >   <summary><b>1. vue基础（basic）</b></summary>
 >
 >   + 插值表达式（begin）： *使用插值表达式显示各类数据*
+>   + v-text（vText）： *v-text的使用*
+>   + v-html（vHtml）： *v-html的使用*
 >
 >   </details>
 
