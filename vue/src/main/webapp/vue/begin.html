@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue的第一个入门案例</title>
+</head>
+<body>
+    <div id="app">
+        {{ msg }}
+        <span>
+            <h3>用户名：{{ user.name }}</h3>
+            <h3>密码：{{ pwd }}</h3>
+        </span>
+        <span>
+            <h5>爱好:{{ hobby[0].name }}, {{ hobby[1].name }}</h5>
+        </span>
+    </div>
+
+    <!--引入vue.js-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el:"#app",  // element 用来给Vue实例定义一个作用范围
+            data:{          // data 用来给Vue实例定义一些相关数据
+                msg:"Hello,World",
+                user:{name:"xiaoMing", id: 1},
+                hobby:[{name:"足球", id:1},{name:"篮球", id:2}],
+                pwd:123,
+            },
+        });
+    </script>
+</body>
+</html>
