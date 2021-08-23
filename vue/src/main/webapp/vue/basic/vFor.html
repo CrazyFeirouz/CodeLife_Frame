@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue的v-for使用</title>
+</head>
+<body>
+    <div id="app">
+        <!--通过v-for遍历对象-->
+        <span v-for="user,index in users" >
+            {{ index }} : {{ user.name }} : {{ user.age }} <br>
+        </span>
+        <br>
+        <!--  建议尽可能再使用v-for时提供key的属性 : 便于vue内部做重用和排序 -->
+        <span v-for="user in users" v-bind:key="user.id">
+            {{ user.id }} : {{ user.name }} : {{ user.age }} <br>
+        </span>
+    </div>
+
+    <!--引入vue.js-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: "#app",
+            data: {
+                users:[
+                    {id:1,name:"小明",age:12},
+                    {id:2,name:"小红",age:22}
+                ]
+            },
+            methods: {}
+        });
+    </script>
+</body>
+</html>

@@ -35,6 +35,7 @@
 >   + v-show（vShow）： *v-show的使用（display）*
 >   + v-if（vIf）： *v-If的使用（DOM）*
 >   + v-bind（vBind）： *v-bind的使用*
+>   + v-for（vFor）： *v-for的使用*
 >
 >   </details>
 
