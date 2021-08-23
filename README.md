@@ -36,6 +36,7 @@
 >   + v-if（vIf）： *v-If的使用（DOM）*
 >   + v-bind（vBind）： *v-bind的使用*
 >   + v-for（vFor）： *v-for的使用*
+>   + v-model（vModel）： *Vue的v-model和数据双向绑定*
 >
 >   </details>
 
