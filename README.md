@@ -40,6 +40,13 @@
 >
 >   </details>
 
+>   <details>
+>   <summary><b>2. vue练习（practice）</b></summary>
+>
+>   + 备忘录（memorandum）： *简单备忘录的实现*
+>
+>   </details>
+
 </details>
 
 ***
