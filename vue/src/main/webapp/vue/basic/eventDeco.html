@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue的部分事件修饰符</title>
+</head>
+<body>
+    <div id="app">
+        <div @click = "divClick1">
+            <input type="button" value="无修饰-按钮" @click = "btnClick1">
+            <input type="button" value=".stop-按钮" @click.stop = "btnClick2">
+        </div>
+        <br>
+        <div @click.self = "divClick2">
+            <input type="button" value="无修饰-按钮" @click = "btnClick1">
+            <input type="button" value=".stop-按钮" @click.stop = "btnClick2">
+        </div>
+    </div>
+
+<!--引入vue.js-->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script>
+    const app = new Vue({
+        el: "#app",
+        data: {},
+        methods: {
+            btnClick1() {
+                alert("无修饰-按钮 被点击了")
+            },
+            btnClick2() {
+                alert(".stop-按钮 被点击了")
+            },
+            divClick1() {
+                alert("divClick1 被点击了")
+            },
+            divClick2() {
+                alert("divClick2(带self) 被点击了")
+            }
+        }
+    });
+</script>
+</body>
+</html>
