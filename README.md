@@ -38,6 +38,7 @@
 >   + v-for（vFor）： *v-for的使用*
 >   + v-model（vModel）： *Vue的v-model和数据双向绑定*
 >   + 事件修饰符(eventDeco)： *Vue的部分事件修饰符*
+>   + 按键修饰符(keyDeco)： *Vue的按键修饰符*
 >
 >   </details>
 
