@@ -49,6 +49,13 @@
 >
 >   </details>
 
+>   <details>
+>   <summary><b>3. axios使用（axios）</b></summary>
+>
+>   + GET请求（get）： *Axios的GET方式的请求*
+>
+>   </details>
+
 </details>
 
 ***
