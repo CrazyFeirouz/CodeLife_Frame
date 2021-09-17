@@ -30,11 +30,11 @@
 
         // 3. 并发执行
         axios.all([findAll(), save()]).then(
-            axios.spread(function (res1, res2) {
+            axios.spread(function (res1, res2) {    // 用来将一组函数的响应结果汇总处理
                 console.log(res1);
                 console.log(res2);
             })
-        )
+        );  // 用来发送一组并发请求
         const app = new Vue({
             el: "#app",
             data: {},
