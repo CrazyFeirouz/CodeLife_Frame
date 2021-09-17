@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Axios的并发请求</title>
+</head>
+<body>
+    <div id="app">
+    </div>
+
+    <!--引入vue.js-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <!--引入Axios.js-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script>
+        // 1. 创建一个查询所有的请求
+        function findAll() {
+            return axios.get("http://localhost:8080/user/findAll?name=feirouz");
+        }
+
+        // 2. 创建一个保存的请求
+        function save() {
+            return axios.post("http://localhost:8080/user/save",{
+                id:5,
+                username:"Recoo",
+                password:"123"
+            })
+        }
+
+        // 3. 并发执行
+        axios.all([findAll(), save()]).then(
+            axios.spread(function (res1, res2) {
+                console.log(res1);
+                console.log(res2);
+            })
+        )
+        const app = new Vue({
+            el: "#app",
+            data: {},
+            methods: {}
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Axios的POST方式的请求</title>
+</head>
+<body>
+    <div id="app">
+
+    </div>
+
+    <!--引入vue.js-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <!--引入Axios.js-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        // 发送POST方式请求
+        axios.post("http://localhost:8080/user/save",{
+            id:3,
+            username:"Viter",
+            password:"123"
+        }).then(function (response) {
+            console.log(response.data);
+        }).catch(function (error){
+            console.log(error);
+        })
+        const app = new Vue({
+            el: "#app",
+            data: {},
+            methods: {}
+        });
+    </script>
+</body>
+</html>

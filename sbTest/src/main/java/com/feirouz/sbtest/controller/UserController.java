@@ -40,7 +40,8 @@ public class UserController {
     // 展示索引
     @CrossOrigin
     @GetMapping("findAll")
-    public List<User> findAll() {
+    public List<User> findAll(String name) {
+        System.out.println("name: " + name);
         ArrayList<User> users = new ArrayList<>();
         users.add(new User(1, "Feirouz", "123"));
         users.add(new User(2, "Peter", "456"));
