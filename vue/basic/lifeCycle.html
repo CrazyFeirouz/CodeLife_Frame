@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue的声明周期函数</title>
+</head>
+<body>
+    <div id="app">
+        <span id="sp">{{ name }}</span>
+        <input type="button" @click="changeData" value="修改数据">
+    </div>
+
+    <!--引入vue.js-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: "#app",
+            data: {
+                name:"feirouz"
+            },
+            methods: {
+                changeData() {
+                    this.name = "peter";
+                }
+            },
+            // 一、初始化阶段
+            beforeCreate() { // 1. 声明周期中的第一个函数，该函数在执行时Vue实例仅仅完成了自身事件的绑定和生命周期函数的初始化工作，Vue实例中的还没有 Data el methods相关的属性
+                console.log("beforeCreate--" + this.name);
+            },
+            created() { // 2. 生命周期中的第二个函数，该函数在执行时在Vue实例已经初始化了data属性和methods方法
+                console.log("created--" + this.name);
+            },
+            beforeMount() { // 3. 生命周期中的第三个函数，该函数在执行时Vue将el中指定作用范围作为模板编译
+                console.log("beforeMount--" + document.getElementById("sp").innerText);
+            },
+            mounted() { // 4. 生命周期中第四个函数，该函数在执行过程中，已经将数据渲染到界面中并且已经更新页面
+                console.log("mounted--" + document.getElementById("sp").innerText);
+            },
+            // 二、运行阶段
+            beforeUpdate(){ // 5. 生命周期中第五个函数，该函数是data中数据发生变化时执行 - 这个事件执行时，仅仅是Vue实例中的data数据变化，页面显示的依然是原始数据
+                console.log("beforeUpdate--Vue--" + this.name);
+                console.log("beforeUpdate--DOM--" + document.getElementById("sp").innerText);
+            },
+            updated() { // 6. 生命周期中第六个函数，该函数执行时data中数据发生变化，页面中的数据也发生了变化，页面中的数据已经和data数据一致
+                console.log("updated--Vue--" + this.name);
+                console.log("updated--DOM--" + document.getElementById("sp").innerText);
+            },
+            // 三、销毁阶段
+            beforeDestory() { // 7. 生命周期第七个函数，该函数执行时，Vue中所有数据 methods component 都没有销毁
+
+            },
+            destoryed() { // 8. 生命周期第八个函数，该函数执行时，Vue实例彻底销毁
+
+            }
+        });
+    </script>
+</body>
+</html>
