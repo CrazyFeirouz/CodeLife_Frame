@@ -37,8 +37,9 @@
 >   + v-bind（vBind）： *v-bind的使用*
 >   + v-for（vFor）： *v-for的使用*
 >   + v-model（vModel）： *Vue的v-model和数据双向绑定*
->   + 事件修饰符(eventDeco)： *Vue的部分事件修饰符*
->   + 按键修饰符(keyDeco)： *Vue的按键修饰符*
+>   + 事件修饰符（eventDeco）： *Vue的部分事件修饰符*
+>   + 按键修饰符（keyDeco）： *Vue的按键修饰符*
+>   + Vue的生命周期（lifeCycle）： *Vue的生命周期（钩子）*
 >
 >   </details>
 
@@ -46,6 +47,7 @@
 >   <summary><b>2. vue练习（practice）</b></summary>
 >
 >   + 备忘录（memorandum）： *简单备忘录的实现*
+>   + 天气查询（selectWeather）：*天气查询的实现*
 >
 >   </details>
 
@@ -53,6 +55,8 @@
 >   <summary><b>3. axios使用（axios）</b></summary>
 >
 >   + GET请求（get）： *Axios的GET方式的请求*
+>   + POST请求（post）： *Axios的POST方式的请求*
+>   + 并发请求（all）： *Axios的并发请求*
 >
 >   </details>
 
