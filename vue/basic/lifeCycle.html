@@ -47,11 +47,10 @@
             },
             // 三、销毁阶段
             beforeDestory() { // 7. 生命周期第七个函数，该函数执行时，Vue中所有数据 methods component 都没有销毁
-                console.log("beforeDestory--Vue--" + this.name);
+
             },
             destoryed() { // 8. 生命周期第八个函数，该函数执行时，Vue实例彻底销毁
-                console.log("destoryed--Vue--" + this.name);
-                console.log("destoryed--DOM--" + document.getElementById("sp").innerText);
+
             }
         });
     </script>
