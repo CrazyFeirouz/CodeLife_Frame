@@ -65,6 +65,8 @@
 >   <details>
 >   <summary><b>4. vue结合bootstrap使用（../vue_bs）</b></summary>
 > 
+>>  用户管理界面
+>
 >   </details>
 
 </details>
