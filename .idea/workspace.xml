@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0843977f-1ff7-48f6-96c4-d1635371dc2f" name="Default Changelist" comment="SpringBoot+Vue+Bootstrap" />
+    <list default="true" id="0843977f-1ff7-48f6-96c4-d1635371dc2f" name="Default Changelist" comment="练习小案例-Vue+SpringBoot">
+      <change beforePath="$PROJECT_DIR$/sbTest/src/test/java/com/feirouz/sbtest/SbTestApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/sbTest/src/test/java/com/feirouz/sbtest/SbTestApplicationTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -160,7 +162,7 @@
       <workItem from="1632493417918" duration="10088000" />
       <workItem from="1632545031185" duration="18250000" />
       <workItem from="1632573055223" duration="57000" />
-      <workItem from="1632573206183" duration="328000" />
+      <workItem from="1632573206183" duration="638000" />
     </task>
     <task id="LOCAL-00001" summary="项目重组">
       <created>1631885891693</created>
@@ -246,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632573425121</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="练习小案例-Vue+SpringBoot">
+      <created>1632573563667</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1632573563667</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +279,8 @@
     <MESSAGE value="axios综合案例-天气查询" />
     <MESSAGE value="vue生命周期" />
     <MESSAGE value="SpringBoot+Vue+Bootstrap" />
-    <option name="LAST_COMMIT_MESSAGE" value="SpringBoot+Vue+Bootstrap" />
+    <MESSAGE value="练习小案例-Vue+SpringBoot" />
+    <option name="LAST_COMMIT_MESSAGE" value="练习小案例-Vue+SpringBoot" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
