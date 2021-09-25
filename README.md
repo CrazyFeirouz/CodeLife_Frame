@@ -63,7 +63,7 @@
 >   </details>
 
 >   <details>
->   <summary><b>4. vue结合bootstrap使用（../vue_bs）</b></summary>
+>   <summary><b>4. vue结合bootstrap&springboot使用（../vue_bs）</b></summary>
 > 
 >>  用户管理界面
 >
