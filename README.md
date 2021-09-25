@@ -21,7 +21,7 @@
 <details>
 <summary style="font-size: large"><b>一、Vue开发（vue）</b></summary>
     
-`路径为 vue/src/main/webapp/vue`
+`路径为 vue`
 
 ****
 
@@ -54,13 +54,19 @@
 >   <details>
 >   <summary><b>3. axios使用（axios）</b></summary>
 >
+>>  搭配服务端（../sbTest）
+>
 >   + GET请求（get）： *Axios的GET方式的请求*
 >   + POST请求（post）： *Axios的POST方式的请求*
 >   + 并发请求（all）： *Axios的并发请求*
 >
 >   </details>
 
+>   <details>
+>   <summary><b>4. vue结合bootstrap使用（../vue_bs）</b></summary>
+> 
+>   </details>
+
 </details>
 
 ***
-
