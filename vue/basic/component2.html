@@ -24,8 +24,8 @@
     <script>
         // 注册方式2
         let login = {
-            // template:'<div><h2>用户登录</h2></div>'  // 开发方式一
-            template:'#loginTemplate'   //开发方式二
+        // template:'<div><h2>用户登录</h2></div>'  // 开发方式一
+        template:'#loginTemplate'   //开发方式二
         }
 
         const app = new Vue({
@@ -37,7 +37,8 @@
                 // login:{     // 具体局部组件名称
                 //     template:'<div><h2>用户登录</h2></div>'
                 // }
-                loginL:login    // 注册方式2
+                login:login    // 注册方式2
+                //login         // 当组件名与变量名一致，可省略一个
             }
         });
     </script>
