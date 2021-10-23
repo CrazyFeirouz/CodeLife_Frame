@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0843977f-1ff7-48f6-96c4-d1635371dc2f" name="Default Changelist" comment="组件">
-      <change afterPath="$PROJECT_DIR$/vue/basic/watchPro.html" afterDir="false" />
+    <list default="true" id="0843977f-1ff7-48f6-96c4-d1635371dc2f" name="Default Changelist" comment="监听属性">
+      <change afterPath="$PROJECT_DIR$/vue/basic/computedPro.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -168,7 +168,7 @@
       <workItem from="1632573206183" duration="748000" />
       <workItem from="1632578258929" duration="3387000" />
       <workItem from="1633156217691" duration="6399000" />
-      <workItem from="1634967199720" duration="3149000" />
+      <workItem from="1634967199720" duration="3778000" />
     </task>
     <task id="LOCAL-00001" summary="项目重组">
       <created>1631885891693</created>
@@ -310,7 +310,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634975953719</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="监听属性">
+      <created>1634977329931</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1634977329931</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,7 +344,8 @@
     <MESSAGE value="项目重组" />
     <MESSAGE value="SpringBoot+Vue+Bootstrap案例" />
     <MESSAGE value="组件" />
-    <option name="LAST_COMMIT_MESSAGE" value="组件" />
+    <MESSAGE value="监听属性" />
+    <option name="LAST_COMMIT_MESSAGE" value="监听属性" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue的computer计算属性</title>
+</head>
+<body>
+<div id="app">
+    <h2>字符串反转前的数据</h2>:
+    <input v-model="msg" type="text" />
+    <!-- split(字符) 根据括号中的字符来切割字符串的方法-->
+    <!-- reverse() 用来反转 数组的方法 -->
+    <!-- join() 是用来将数组拼接起来的方法 -->
+    <p>---插值表达式内写表达式:</p>
+    <h2>{{ msg.split('').reverse().join('') }}</h2>
+    <p>---使用计算属性</p>
+    <h2>{{ finalData }}</h2>
+    <br>
+    <input type="text" v-model="firstName"/>+
+    <input type="text" v-model="lastName"/>=
+    <input type="text" v-model="finalName"/>
+</div>
+<!--引入vue.js-->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script>
+    var vue = new Vue({
+        el: "#app",
+        data: {
+            msg:"Hello World",
+            firstName:0,
+            lastName:0
+        },
+        methods: {
+            reverseStr() {
+                return this.msg.split('').reverse().join('');
+            }
+        },
+        // 计算属性是用来记录一些比较复杂的业务逻辑表达式 可以将他写到计算机属性
+        computed: {
+            finalData:function() {
+                return this.msg.split('').reverse().join('');
+            },
+            finalName: {
+                get() {
+                    // 默认使用的get方法, get方法是用来监视data中的数据的变化, 然后用来进行运算
+                    return parseInt(this.firstName) + parseInt(this.lastName);
+                },
+                set(type) {
+                    // set方法是用来监视 finalName 这个计算数据的变化 当我们修改了 计算属性中的数据 就会被他监视到
+                    console.log(type);
+                }
+            }
+        }
+    })
+</script>
+</body>
+</html>
