@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0843977f-1ff7-48f6-96c4-d1635371dc2f" name="Default Changelist" comment="组件">
+      <change afterPath="$PROJECT_DIR$/vue/basic/watchPro.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/basic/component2.html" beforeDir="false" afterPath="$PROJECT_DIR$/vue/basic/component2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +19,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Class" />
         <option value="HtmlVueTemplate" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -75,6 +75,19 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.VueApplication">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestUserDAO" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="vue_bs" />
       <extension name="coverage">
@@ -155,7 +168,7 @@
       <workItem from="1632573206183" duration="748000" />
       <workItem from="1632578258929" duration="3387000" />
       <workItem from="1633156217691" duration="6399000" />
-      <workItem from="1634967199720" duration="1921000" />
+      <workItem from="1634967199720" duration="3149000" />
     </task>
     <task id="LOCAL-00001" summary="项目重组">
       <created>1631885891693</created>
@@ -290,7 +303,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634975044520</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="组件">
+      <created>1634975953719</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1634975953719</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

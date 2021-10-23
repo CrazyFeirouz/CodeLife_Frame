@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue的watch监听属性</title>
+</head>
+<body>
+      <div id="app">
+        <h1>{{ num }}</h1>
+        <button @click="add">点击增加</button>
+    </div>
+</body>
+
+<!--引入vue.js-->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script>
+    var vue = new Vue({
+        // el是用来将视图区域挂载到 vue对象中
+        el:'#app',
+        data:{
+            msg:"Hello World",
+            num:0
+        },
+        methods: {
+            add() {
+              this.num += 1;
+            }
+        },
+        watch: {
+            // 监听属性 起到一个监视的效果 只要他关注的参数 发生变化立马就会触发这里的内容
+            // 第一个参数用来接收新值, 第二个参数用来接收旧的数据
+            // 相较于computer 这个watch监听器一次只能监听一个参数
+            num(newValue, oldValue) {
+              console.log("检测到发生变化");
+              console.log("num发生变化之前的数据 - " + oldValue);
+              console.log("num发生变化之后的数据 - " + newValue);
+            },
+            // 一个数据只能绑定一个监听事件，后绑定替换先绑定
+            // num(curValue) {
+            //   console.log("检测到发生变化");
+            //   console.log("num当前变化的数据 - " + curValue);
+            // }
+        }
+    })
+</script>
+</html>
