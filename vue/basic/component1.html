@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue的组件 - 全局组件的开发</title>
+</head>
+<body>
+    <div id="app">
+        <!--使用全局组件-->
+        <user-login></user-login>
+    </div>
+
+    <!--引入vue.js-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script>
+
+        // 全局组件注册 - 全局组件给Vue实例，日后可以在任意Vue实例的范围内使用该组件
+        //  参数1：组件名称
+        //          （注意：针对于使用驼峰命名法的组件，在使用时记得将中间 “大写” 改为 “-小写”）
+        //  参数2：组件配置对象 template - 用来书写组件的html代码
+        //          （注意：在 template 中必须存在一个容器）
+        Vue.component('userLogin', {
+            template:'<div><h1>用户登录</h1></div>'
+        })
+        const app = new Vue({
+            el: "#app",
+            data: {},
+            methods: {}
+        });
+    </script>
+</body>
+</html>

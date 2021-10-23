@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue的组件 - 局部组件的开发</title>
+</head>
+<body>
+    <div id="app">
+        <login></login>
+    </div>
+
+    <!--模板声明方式1-->
+<!--    <div id="loginTemplate">-->
+<!--        <h1>用户登录2</h1>-->
+<!--    </div>-->
+
+    <!--模板声明方式2-->
+    <template id="loginTemplate">
+        <h1>用户登录3</h1>
+    </template>
+
+    <!--引入vue.js-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script>
+        // 注册方式2
+        let login = {
+            // template:'<div><h2>用户登录</h2></div>'  // 开发方式一
+            template:'#loginTemplate'   //开发方式二
+        }
+
+        const app = new Vue({
+            el: "#app",
+            data: {},
+            methods: {},
+            components: {   // 用来注册局部组件
+                // 注册方式1
+                // login:{     // 具体局部组件名称
+                //     template:'<div><h2>用户登录</h2></div>'
+                // }
+                loginL:login    // 注册方式2
+            }
+        });
+    </script>
+</body>
+</html>

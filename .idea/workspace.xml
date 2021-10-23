@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0843977f-1ff7-48f6-96c4-d1635371dc2f" name="Default Changelist" comment="SpringBoot+Vue+Bootstrap案例">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/basic/component1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/basic/component2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +20,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HtmlVueTemplate" />
         <option value="HTML File" />
         <option value="Class" />
+        <option value="HtmlVueTemplate" />
       </list>
     </option>
   </component>
@@ -74,19 +76,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.VueApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestUserDAO" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="vue_bs" />
       <extension name="coverage">
@@ -165,7 +154,9 @@
       <workItem from="1632545031185" duration="18250000" />
       <workItem from="1632573055223" duration="57000" />
       <workItem from="1632573206183" duration="748000" />
-      <workItem from="1632578258929" duration="825000" />
+      <workItem from="1632578258929" duration="3387000" />
+      <workItem from="1633156217691" duration="6399000" />
+      <workItem from="1634967199720" duration="1036000" />
     </task>
     <task id="LOCAL-00001" summary="项目重组">
       <created>1631885891693</created>
@@ -286,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632578894668</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="SpringBoot+Vue+Bootstrap案例">
+      <created>1632579101239</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1632579101239</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
